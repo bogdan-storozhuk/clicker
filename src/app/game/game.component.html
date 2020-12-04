@@ -1,0 +1,33 @@
+<div class="game">
+  <div class="game-left-column">
+    <p class="game-left-column__greeting">Hello, {{ name }}</p>
+    <p class="game-left-column__clicks-counter">
+      You have made {{ clicks }} clicks
+    </p>
+    <app-main-button
+      [clickButtonText]="clickButtonText"
+      [isClickButtonDisabled]="isClickButtonDisabled"
+      (onAddClick)="addClick()"
+    ></app-main-button>
+    <p class="game-left-column__timer">Timer:{{ time }}</p>
+  </div>
+  <div class="game-right-column">
+    <app-seconds-selector-container
+      (onChecked)="check($event)"
+      [inProcess]="inProcess"
+    ></app-seconds-selector-container>
+    <app-control-buttons (onReset)="reset()"></app-control-buttons>
+    <app-previous-record
+      *ngIf="previousRecord"
+      [selectedTime]="selectedTime"
+      [previousRecord]="previousRecord"
+    ></app-previous-record>
+    <app-result
+      *ngIf="isClickButtonDisabled"
+      [name]="name"
+      [selectedTime]="selectedTime"
+      [clicks]="clicks"
+      [isWon]="isWon"
+    ></app-result>
+  </div>
+</div>

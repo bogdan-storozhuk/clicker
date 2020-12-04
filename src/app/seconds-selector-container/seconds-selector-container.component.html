@@ -1,0 +1,36 @@
+<div class="game-right-column__seconds-selector-container">
+  <div>
+    <input
+      (change)="check($event)"
+      [disabled]="inProcess"
+      checked="checked"
+      type="radio"
+      id="fiveSec"
+      name="seconds"
+      value="5"
+    />
+    <label for="fiveSec">5 sec</label>
+  </div>
+  <div>
+    <input
+      (change)="check($event)"
+      [disabled]="inProcess"
+      type="radio"
+      id="tenSec"
+      name="seconds"
+      value="10"
+    />
+    <label for="tenSec">10 sec</label>
+  </div>
+  <div>
+    <input
+      (change)="check($event)"
+      [disabled]="inProcess"
+      type="radio"
+      id="fifteenSec"
+      name="seconds"
+      value="15"
+    />
+    <label for="fifteenSec">15 sec</label>
+  </div>
+</div>

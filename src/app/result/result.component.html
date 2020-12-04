@@ -1,0 +1,12 @@
+<div *ngIf="isWon; else lost">
+  <p class="congratulation">Congratulations {{ name }}!!!!</p>
+  <p class="result--won">
+    You set a new record for {{ selectedTime }} = {{ clicks }}clicks
+  </p>
+</div>
+<ng-template #lost>
+  <p class="result--failed">
+    <span class="result--failed__name">{{ name }}</span
+    >, your result is bad, you have to practice more
+  </p>
+</ng-template>
