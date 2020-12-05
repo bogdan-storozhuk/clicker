@@ -8,7 +8,7 @@ deploy:
   provider: heroku
   api_key:
     secure: I/TXEj9/6uZB35auQlU41z8mM9jxmsuOqxfckByXN22mzVBQHRyRDWGuDHOTT4DtcJi3D5vHmgDwiGZH8asCXxn1+unS/c2RJX6DJenBJb1dqTfeWwd5utiT1CrSAWSP0UhsyCE6LJYaBf4ppnCPs/2anqGxGI3taK/1hADDFm/SWj8DG7J6ebqCbEhQMeQNJZXO5qwxbFBLRwUSJeiE54vQksSX4UuoVcp/Y/3ucTfnjfPjL/zkbl+SAWavhm3LrC0qPRg/T2Z38eJ47EMMDAGuZ3Lw90davxB/aCNWUvpSmaTQsjGq4x5SRXyVAPbaho/a7jc6dnRgNifW4U+j7809Wb3BsqR5fUgkMH4nkzbY2mfkYXC5ggntkJAM8hNXDY+ytKzwEXtgSbbh9KA3vus7RU5HhbGso09vAqi/6fmCURbPCCFH1MACVs9qsE7Wt2B/jmVEqv00cu2EtX11+BnB0jmyv6/theyAAEE6VXQ5axPBXNdNUEwm5gQIW+gOWMRfCLtzETqGhKEKcF9dtvV4jZA1+UCKEOH1erc8UpoQOPAFBIymkf5nbNN2GZZTHfUgzyeFVdrGRCPnQwVqsyiTFWylofsLIdpiBcEWKOLwyoVwN1crZnbDuZmbYo8s9n0MgW8iE73MqldngHTwGUjFeULeJWl1OP7/4JVVSPE=
-  app: clicker
+  app: angular-clicker-hw3
   on:
     repo: bogdan-storozhuk/clicker
     branch: main
